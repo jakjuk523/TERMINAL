@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <title></title>
+       <link href="style.css" rel="stylesheet">
+       <script src="index.js" defer></script>
+       <link rel="icon" type="image/png" sizes="16x16" href="/Инструменты/Фото/favicon/favicon-16x16.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="/Инструменты/Фото/favicon/favicon-32x32.png">
+    </head>
+   
+   <body>
+       <section class="firstMenuSection_style" id="firstMenuSection">
+            <!--Секция главного меню-->
+            <!--изображения встречающее пользователя на главном меню. Оно должно быть поверх экрана, а кнопка на нем.-->
+            <img class="firstMenuImg_style" src="Фото/menuImg.png" alt="Изображение включенного терминала в полностью темной комнате. Терминал находится на столе, освещает часть стола и клавиатуру">
+            <button  class="firstMenuButton_style" id="firstMenuButton">Start Game</button>
+       </section>
+
+       <section class="startGame_style" id="startGame">
+            <div class="progress_style">
+                <!--Это контейнер где будет прогресс игрок и прогресс-бар. прогресс должен быть в самом верху по центру-->
+                <div class="progressBar-style" id="progressBar"></div> <!--Прогресс-бар-->
+                <p class="progressText_style" id="progressText">Progress: 0%</p>   <!--Текст с прогрессом в процентах-->
+            </div>
+
+            <div class="terminalDiv_style" id="terminalDiv">
+                <!--Здесь будут ответы от терминала-->
+            </div>
+
+            <div class="tasksDiv_style">
+                <!--Тут задания, какие задания будут еще не определенно. Изначально все они красного цвета, при выполнение сменяються на зеленый цвет-->
+                <p class="tasksInstruction_style">Your tasks:</p>
+                <p class="tasks_style" id="t1">1. Task_1</p>
+                <p class="tasks_style" id="t2">2. Task_2</p>
+                <p class="tasks_style" id="t3">3. Task_3</p>
+                <p class="tasks_style" id="t4">4. Task_4</p>
+                <p class="tasks_style" id="t5">5. Task_5</p>
+                <!--Список кода игрока-->
+                <p class="completedTasks_style" id="secretCode">Code: </p>
+                <!--Счет выполненых задач-->
+                <p class="completedTasks_style" id="completedTasks">Completed: 0/5</p>
+            </div>
+
+            <!--Тут поле для ввода команд терминал-->
+            <input class="input_style" id="input" placeholder="Enter commands to complete tasks." type="text">
+       </section>
+   </body>
+</html>
+
+
+<!--
+==================================================
+        TERRA-NET INDUSTRIAL TERMINAL v2.1        
+==================================================
+MODEL:      XT-84 BUNKERSYSTEM
+MFR YEAR:   1984
+STORAGE:    160 KB (5.25" MAGNETIC FLOPPY DISK)
+MEMORY:     64 KB RAM
+DISPLAY:    12" CATHODE-RAY TUBE (GREEN PHOSPHOR)
+AUDIO:      INTEGRATED AM/FM RADIO RECEIVER MODULE
+==================================================
+-->
